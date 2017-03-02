@@ -23,4 +23,14 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-});
+})
+.config(function($stateProvider,$urlRouterProvider) {
+    //凡是你输入的路由不正确或者找不到都会跳转到'home'页
+    $urlRouterProvider.otherwise('/home');
+    $stateProvider
+      .state('home',{ //路由名称
+          url:'/home', //url
+          templateUrl:'template/home.html', //模板位置
+          controller:'homeCtrl' //对应模板的controller名称
+      })
+})
