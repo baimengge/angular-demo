@@ -5,7 +5,8 @@
 			'myFactory',
 			'$state',
 			'$rootScope',
-			function($scope,myFactory,$state,$rootScope){
+			'$filter',
+			function($scope,myFactory,$state,$rootScope,$filter){
 
 			// 设立一个命名空间
 			$scope.slideData=[
@@ -28,13 +29,14 @@
 						// 赋值
 						$scope.listData=res.data;
 						console.log($scope.listData);
-						// $scope.name = $filter('uppercase')($scope.listData.name);
 					}
 				},function (res) {
 					// 接口请求失败或者延迟
 				});
 			}
 			getList(); // 执行方法
+
+			// $scope.name = $filter('uppercase')($scope.listData.name);
 
 			$scope.goDetail　=　function (item) {
 				// 方法二：$state.go("xxx", {obj});配置路由参数

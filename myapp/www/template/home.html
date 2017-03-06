@@ -1,4 +1,4 @@
-<ion-view title="Home">
+<ion-view title="Home" class="align-title-center">
 	<!-- 头部 -->
 	<ion-header-bar align-title="center" class="bar-positive">
 		<h1 class="title title-center">home!</h1>
@@ -9,9 +9,9 @@
 	<!-- 中间内容 -->
 	<ion-content>
 		<!-- 页面的内容 -->
-		<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true" slide-interval=2000>
+		<ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true"  auto-play="true" slide-interval=2000>
 		  <ion-slide ng-repeat="item in slideData track by $index">
-		    <div class="box">
+		    <div class="box banner">
 		    	<img ng-src="{{item.img}}">
 		    </div>
 		  </ion-slide>
