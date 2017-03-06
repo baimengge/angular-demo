@@ -35,6 +35,7 @@ app.config(function($stateProvider,$urlRouterProvider) {
       })
       .state('detail',{
           url:'/detail',
+          // url:'/detail?lineLyric&name&time',
           templateUrl:'template/detail.html',
           controller:'detailCtrl'
       })

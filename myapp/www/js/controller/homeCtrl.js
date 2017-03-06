@@ -37,10 +37,15 @@
 			getList(); // 执行方法
 
 			$scope.goDetail　=　function (item) {
-				console.log(item);
-				$state.go('detail'); // 跳转detail路由
-				// $rootScope顶级作用域传递数据
+				// 方法二：$state.go("xxx", {obj});配置路由参数
+				// $state.go('detail',item); // 跳转detail路由
+				$state.go('detail');
+
+				// 方法一： $rootScope顶级作用域传递数据
 				$rootScope.detail = item;
+
+				// 方法三：services里面建立一个服务（传递数据）
+				// myFactory.storage.setVal('detail',item); // 保存数据
 			}
 		}])
 })(angular);
