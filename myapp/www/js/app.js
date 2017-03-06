@@ -33,4 +33,9 @@ app.config(function($stateProvider,$urlRouterProvider) {
           templateUrl:'template/home.html', //模板位置
           controller:'homeCtrl' //对应模板的controller名称
       })
+      .state('detail',{
+          url:'/detail',
+          templateUrl:'template/detail.html',
+          controller:'detailCtrl'
+      })
 })

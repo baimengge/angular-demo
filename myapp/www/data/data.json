@@ -1,14 +1,17 @@
 [
 	{
 		"time":"0.51",
-		"lineLyric":"飘向北方 - 黄明志&王力宏"
+		"lineLyric":"飘向北方 - 黄明志&王力宏",
+		"name":"huangzhiming"
 	},
 	{
 		"time":"10.02",
-		"lineLyric":"飘向北方 别问我家乡"
+		"lineLyric":"飘向北方 别问我家乡",
+		"name":"wanglihong"
 	},
 	{
 		"time":"15.08",
-		"lineLyric":"高耸古老的城墙 挡不住忧伤"
+		"lineLyric":"高耸古老的城墙 挡不住忧伤",
+		"name":"zhaolei"
 	}
 ]

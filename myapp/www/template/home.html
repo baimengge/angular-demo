@@ -17,8 +17,9 @@
 		  </ion-slide>
 		</ion-slide-box>
 		<ion-list>
-			<ion-item ng-repeat="item in listData track by $index">
+			<ion-item ng-repeat="item in listData track by $index" ng-click="goDetail(item);">
 				<p>简介:{{item.lineLyric}}</p>
+				<p>姓名:{{item.name}}</p>
 				<p>时间:{{item.time}}</p>
 			</ion-item>
 		</ion-list>
